@@ -10,7 +10,7 @@
             Console.WriteLine("3. Elf");
             Console.WriteLine("4. Ork");
 
-            // Kullanıcının seçimini al
+            
             int userChoice = GetUserChoice(1, 4);
 
             // Seçilen karaktere göre özellikleri belirle
@@ -37,7 +37,7 @@
                     break;
             }
 
-            // Bilgisayar karakterini oluştur
+           
             Random random = new Random();
             int computerHealth = random.Next(80, 121);
             int computerAttackPower = random.Next(10, 21);
@@ -117,8 +117,6 @@
 
         static bool CheckHit()
         {
-            // İsabet kontrolü burada yapılabilir.
-            // Örneğin, belirli bir olasılıkla true veya false dönebilir.
             Random random = new Random();
             return random.Next(0, 2) == 0; // 0 veya 1 döner (50% isabet şansı)
         }
